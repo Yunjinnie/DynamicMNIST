@@ -1,0 +1,119 @@
+
+====== Statistics for digit 0 ======
+- #Samples : 1000
+- Time length mean: 24.499
+- Time length max: 46
+- Time length min: 13
+- Hovering length mean: 0.0
+- Hovering length max: 0
+- Hovering length min: 0
+- Types of hovering times: [0]
+- The possible number of strokes: [1]
+
+====== Statistics for digit 1 ======
+- #Samples : 1000
+- Time length mean: 13.694
+- Time length max: 30
+- Time length min: 5
+- Hovering length mean: 0.0
+- Hovering length max: 0
+- Hovering length min: 0
+- Types of hovering times: [0]
+- The possible number of strokes: [1]
+
+====== Statistics for digit 2 ======
+- #Samples : 1000
+- Time length mean: 26.155
+- Time length max: 41
+- Time length min: 18
+- Hovering length mean: 0.0
+- Hovering length max: 0
+- Hovering length min: 0
+- Types of hovering times: [0]
+- The possible number of strokes: [1]
+
+====== Statistics for digit 3 ======
+- #Samples : 1000
+- Time length mean: 27.401
+- Time length max: 41
+- Time length min: 19
+- Hovering length mean: 0.0
+- Hovering length max: 0
+- Hovering length min: 0
+- Types of hovering times: [0]
+- The possible number of strokes: [1]
+
+====== Statistics for digit 4 ======
+- #Samples : 1000
+- Time length mean: 38.837
+- Time length max: 63
+- Time length min: 24
+- Hovering length mean: 8.118
+- Hovering length max: 15
+- Hovering length min: 4
+- Types of hovering times: [1]
+- The possible number of strokes: [2]
+
+====== Statistics for digit 5 ======
+- #Samples : 1000
+- Time length mean: 41.895
+- Time length max: 71
+- Time length min: 26
+- Hovering length mean: 10.199
+- Hovering length max: 21
+- Hovering length min: 6
+- Types of hovering times: [1]
+- The possible number of strokes: [2]
+
+====== Statistics for digit 6 ======
+- #Samples : 1000
+- Time length mean: 20.927
+- Time length max: 39
+- Time length min: 13
+- Hovering length mean: 0.0
+- Hovering length max: 0
+- Hovering length min: 0
+- Types of hovering times: [0]
+- The possible number of strokes: [1]
+
+====== Statistics for digit 7 ======
+- #Samples : 1000
+- Time length mean: 22.427
+- Time length max: 36
+- Time length min: 12
+- Hovering length mean: 0.0
+- Hovering length max: 0
+- Hovering length min: 0
+- Types of hovering times: [0]
+- The possible number of strokes: [1]
+
+====== Statistics for digit 8 ======
+- #Samples : 1000
+- Time length mean: 33.867
+- Time length max: 56
+- Time length min: 23
+- Hovering length mean: 0.0
+- Hovering length max: 0
+- Hovering length min: 0
+- Types of hovering times: [0]
+- The possible number of strokes: [1]
+
+====== Statistics for digit 9 ======
+- #Samples : 1000
+- Time length mean: 26.546
+- Time length max: 50
+- Time length min: 13
+- Hovering length mean: 0.0
+- Hovering length max: 0
+- Hovering length min: 0
+- Types of hovering times: [0]
+- The possible number of strokes: [1]
+
+====== Statistics for total characters ======
+- #Samples : 10000
+- Time length mean: 27.6248
+- Time length max: 71
+- Time length min: 5
+- Hovering length mean: 1.8317
+- Hovering length max: 21
+- Hovering length min: 0

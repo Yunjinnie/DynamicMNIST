@@ -1,0 +1,495 @@
+- Project name: digit-10
+- Run name: run-260406222422
+- Target motor command: v
+- Input feeback: ['v']
+hparam and python files are saved!
+Generating the Cartesian velocity dataset for training neural networks ...
+Generating the Cartesian velocity dataset for validating neural networks ...
+Generating the Cartesian velocity dataset for testing neural networks ...
+#Train = 8000
+#Val   = 1000
+#Test  = 1000
+Before scaling, (dx_mean, dy_mean, dx_std, dy_std) (0.5195186458137118, 2.3056644376241486, 5.996862537594532, 8.249300991290276)
+Before scaling, (d2x_mean, d2y_mean, d2x_std, d2y_std) (-0.046302034383239876, -0.00953516472552024, 2.900022554594078, 3.7550404520054346)
+After scaling, targets (x_mean, y_mean, x_std, y_std) (0.08663174160768766, 0.2794981586995674, 1.0, 1.0)
+Soft-DTW K-means to cluster characters according to the motor programs of a single character ...
+Compute barycenters ...
+Draw barycenters ...
+[체크 1] 저장 시도 경로: logs/digit-10/run-260406222422/dtw_classifier/barycenter-img-character-0-mp-0.gif
+[체크 2] 원본 궤적(df_v) 길이: 24
+[체크 3] 변환된 점(df_dots) 길이: 25
+[체크 1] 저장 시도 경로: logs/digit-10/run-260406222422/dtw_classifier/barycenter-img-character-1-mp-0.gif
+[체크 2] 원본 궤적(df_v) 길이: 13
+[체크 3] 변환된 점(df_dots) 길이: 14
+[체크 1] 저장 시도 경로: logs/digit-10/run-260406222422/dtw_classifier/barycenter-img-character-2-mp-0.gif
+[체크 2] 원본 궤적(df_v) 길이: 25
+[체크 3] 변환된 점(df_dots) 길이: 26
+[체크 1] 저장 시도 경로: logs/digit-10/run-260406222422/dtw_classifier/barycenter-img-character-3-mp-0.gif
+[체크 2] 원본 궤적(df_v) 길이: 27
+[체크 3] 변환된 점(df_dots) 길이: 28
+[체크 1] 저장 시도 경로: logs/digit-10/run-260406222422/dtw_classifier/barycenter-img-character-4-mp-0.gif
+[체크 2] 원본 궤적(df_v) 길이: 38
+[체크 3] 변환된 점(df_dots) 길이: 39
+[체크 1] 저장 시도 경로: logs/digit-10/run-260406222422/dtw_classifier/barycenter-img-character-5-mp-0.gif
+[체크 2] 원본 궤적(df_v) 길이: 41
+[체크 3] 변환된 점(df_dots) 길이: 42
+[체크 1] 저장 시도 경로: logs/digit-10/run-260406222422/dtw_classifier/barycenter-img-character-6-mp-0.gif
+[체크 2] 원본 궤적(df_v) 길이: 21
+[체크 3] 변환된 점(df_dots) 길이: 22
+[체크 1] 저장 시도 경로: logs/digit-10/run-260406222422/dtw_classifier/barycenter-img-character-7-mp-0.gif
+[체크 2] 원본 궤적(df_v) 길이: 22
+[체크 3] 변환된 점(df_dots) 길이: 23
+[체크 1] 저장 시도 경로: logs/digit-10/run-260406222422/dtw_classifier/barycenter-img-character-8-mp-0.gif
+[체크 2] 원본 궤적(df_v) 길이: 33
+[체크 3] 변환된 점(df_dots) 길이: 34
+[체크 1] 저장 시도 경로: logs/digit-10/run-260406222422/dtw_classifier/barycenter-img-character-9-mp-0.gif
+[체크 2] 원본 궤적(df_v) 길이: 22
+[체크 3] 변환된 점(df_dots) 길이: 23
+[체크 1] 저장 시도 경로: logs/digit-10/run-260406222422/dtw_classifier/barycenter-img-character-9-mp-1.gif
+[체크 2] 원본 궤적(df_v) 길이: 31
+[체크 3] 변환된 점(df_dots) 길이: 32
+{'plot': {'0': {0: 'logs/digit-10/run-260406222422/dtw_classifier/barycenter-character-0-mp-0.png'}, '1': {0: 'logs/digit-10/run-260406222422/dtw_classifier/barycenter-character-1-mp-0.png'}, '2': {0: 'logs/digit-10/run-260406222422/dtw_classifier/barycenter-character-2-mp-0.png'}, '3': {0: 'logs/digit-10/run-260406222422/dtw_classifier/barycenter-character-3-mp-0.png'}, '4': {0: 'logs/digit-10/run-260406222422/dtw_classifier/barycenter-character-4-mp-0.png'}, '5': {0: 'logs/digit-10/run-260406222422/dtw_classifier/barycenter-character-5-mp-0.png'}, '6': {0: 'logs/digit-10/run-260406222422/dtw_classifier/barycenter-character-6-mp-0.png'}, '7': {0: 'logs/digit-10/run-260406222422/dtw_classifier/barycenter-character-7-mp-0.png'}, '8': {0: 'logs/digit-10/run-260406222422/dtw_classifier/barycenter-character-8-mp-0.png'}, '9': {0: 'logs/digit-10/run-260406222422/dtw_classifier/barycenter-character-9-mp-0.png', 1: 'logs/digit-10/run-260406222422/dtw_classifier/barycenter-character-9-mp-1.png'}}, 'gif': {'0': {0: 'logs/digit-10/run-260406222422/dtw_classifier/barycenter-img-character-0-mp-0.gif'}, '1': {0: 'logs/digit-10/run-260406222422/dtw_classifier/barycenter-img-character-1-mp-0.gif'}, '2': {0: 'logs/digit-10/run-260406222422/dtw_classifier/barycenter-img-character-2-mp-0.gif'}, '3': {0: 'logs/digit-10/run-260406222422/dtw_classifier/barycenter-img-character-3-mp-0.gif'}, '4': {0: 'logs/digit-10/run-260406222422/dtw_classifier/barycenter-img-character-4-mp-0.gif'}, '5': {0: 'logs/digit-10/run-260406222422/dtw_classifier/barycenter-img-character-5-mp-0.gif'}, '6': {0: 'logs/digit-10/run-260406222422/dtw_classifier/barycenter-img-character-6-mp-0.gif'}, '7': {0: 'logs/digit-10/run-260406222422/dtw_classifier/barycenter-img-character-7-mp-0.gif'}, '8': {0: 'logs/digit-10/run-260406222422/dtw_classifier/barycenter-img-character-8-mp-0.gif'}, '9': {0: 'logs/digit-10/run-260406222422/dtw_classifier/barycenter-img-character-9-mp-0.gif', 1: 'logs/digit-10/run-260406222422/dtw_classifier/barycenter-img-character-9-mp-1.gif'}}}
+character 0
+motor program 0
+logs/digit-10/run-260406222422/dtw_classifier/barycenter-character-0-mp-0.png
+logs/digit-10/run-260406222422/dtw_classifier/barycenter-img-character-0-mp-0.gif
+character 1
+motor program 0
+logs/digit-10/run-260406222422/dtw_classifier/barycenter-character-1-mp-0.png
+logs/digit-10/run-260406222422/dtw_classifier/barycenter-img-character-1-mp-0.gif
+character 2
+motor program 0
+logs/digit-10/run-260406222422/dtw_classifier/barycenter-character-2-mp-0.png
+logs/digit-10/run-260406222422/dtw_classifier/barycenter-img-character-2-mp-0.gif
+character 3
+motor program 0
+logs/digit-10/run-260406222422/dtw_classifier/barycenter-character-3-mp-0.png
+logs/digit-10/run-260406222422/dtw_classifier/barycenter-img-character-3-mp-0.gif
+character 4
+motor program 0
+logs/digit-10/run-260406222422/dtw_classifier/barycenter-character-4-mp-0.png
+logs/digit-10/run-260406222422/dtw_classifier/barycenter-img-character-4-mp-0.gif
+character 5
+motor program 0
+logs/digit-10/run-260406222422/dtw_classifier/barycenter-character-5-mp-0.png
+logs/digit-10/run-260406222422/dtw_classifier/barycenter-img-character-5-mp-0.gif
+character 6
+motor program 0
+logs/digit-10/run-260406222422/dtw_classifier/barycenter-character-6-mp-0.png
+logs/digit-10/run-260406222422/dtw_classifier/barycenter-img-character-6-mp-0.gif
+character 7
+motor program 0
+logs/digit-10/run-260406222422/dtw_classifier/barycenter-character-7-mp-0.png
+logs/digit-10/run-260406222422/dtw_classifier/barycenter-img-character-7-mp-0.gif
+character 8
+motor program 0
+logs/digit-10/run-260406222422/dtw_classifier/barycenter-character-8-mp-0.png
+logs/digit-10/run-260406222422/dtw_classifier/barycenter-img-character-8-mp-0.gif
+character 9
+motor program 0
+logs/digit-10/run-260406222422/dtw_classifier/barycenter-character-9-mp-0.png
+logs/digit-10/run-260406222422/dtw_classifier/barycenter-img-character-9-mp-0.gif
+character 9
+motor program 1
+logs/digit-10/run-260406222422/dtw_classifier/barycenter-character-9-mp-1.png
+logs/digit-10/run-260406222422/dtw_classifier/barycenter-img-character-9-mp-1.gif
+[TEST] Generating test handwriting samples...
+
+==================================================
+[TEST] DTW classification (Step: 63)
+==================================================
+[Prediction] DTW Total Accuracy: 0.6820
+[Test Set Target] DTW Total Accuracy: 0.9970
+[DTW Gap] (Test - Pred): 0.3150
+
+==================================================
+[TEST] CNN classification (Step: 63)
+==================================================
+[Prediction] CNN Total Accuracy: 0.7031
+[Test Set Target] CNN Total Accuracy: 0.9980
+[CNN Gap] (Test - Pred): 0.2949
+
+==================================================
+[TEST] Final Performance Summary (Step: 63)
+==================================================
+Current Total Accuracy (DTW+CNN mean): 0.6926
+Max Total Accuracy So Far: 0.6926
+Is Best Model?: Yes!
+Reached Human Level?: No
+==================================================
+
+[TEST] Generating test handwriting samples...
+
+==================================================
+[TEST] DTW classification (Step: 126)
+==================================================
+[Prediction] DTW Total Accuracy: 0.8648
+[Test Set Target] DTW Total Accuracy: 0.9970
+[DTW Gap] (Test - Pred): 0.1322
+
+==================================================
+[TEST] CNN classification (Step: 126)
+==================================================
+[Prediction] CNN Total Accuracy: 0.8180
+[Test Set Target] CNN Total Accuracy: 0.9980
+[CNN Gap] (Test - Pred): 0.1800
+
+==================================================
+[TEST] Final Performance Summary (Step: 126)
+==================================================
+Current Total Accuracy (DTW+CNN mean): 0.8414
+Max Total Accuracy So Far: 0.8414
+Is Best Model?: Yes!
+Reached Human Level?: No
+==================================================
+
+[TEST] Generating test handwriting samples...
+
+==================================================
+[TEST] DTW classification (Step: 189)
+==================================================
+[Prediction] DTW Total Accuracy: 0.7914
+[Test Set Target] DTW Total Accuracy: 0.9970
+[DTW Gap] (Test - Pred): 0.2056
+
+==================================================
+[TEST] CNN classification (Step: 189)
+==================================================
+[Prediction] CNN Total Accuracy: 0.8078
+[Test Set Target] CNN Total Accuracy: 0.9980
+[CNN Gap] (Test - Pred): 0.1902
+
+==================================================
+[TEST] Final Performance Summary (Step: 189)
+==================================================
+Current Total Accuracy (DTW+CNN mean): 0.7996
+Max Total Accuracy So Far: 0.8414
+Is Best Model?: No
+Reached Human Level?: No
+==================================================
+
+[TEST] Generating test handwriting samples...
+
+==================================================
+[TEST] DTW classification (Step: 252)
+==================================================
+[Prediction] DTW Total Accuracy: 0.8070
+[Test Set Target] DTW Total Accuracy: 0.9970
+[DTW Gap] (Test - Pred): 0.1900
+
+==================================================
+[TEST] CNN classification (Step: 252)
+==================================================
+[Prediction] CNN Total Accuracy: 0.8047
+[Test Set Target] CNN Total Accuracy: 0.9980
+[CNN Gap] (Test - Pred): 0.1933
+
+==================================================
+[TEST] Final Performance Summary (Step: 252)
+==================================================
+Current Total Accuracy (DTW+CNN mean): 0.8059
+Max Total Accuracy So Far: 0.8414
+Is Best Model?: No
+Reached Human Level?: No
+==================================================
+
+[TEST] Generating test handwriting samples...
+
+==================================================
+[TEST] DTW classification (Step: 315)
+==================================================
+[Prediction] DTW Total Accuracy: 0.8938
+[Test Set Target] DTW Total Accuracy: 0.9970
+[DTW Gap] (Test - Pred): 0.1032
+
+==================================================
+[TEST] CNN classification (Step: 315)
+==================================================
+[Prediction] CNN Total Accuracy: 0.9086
+[Test Set Target] CNN Total Accuracy: 0.9980
+[CNN Gap] (Test - Pred): 0.0894
+
+==================================================
+[TEST] Final Performance Summary (Step: 315)
+==================================================
+Current Total Accuracy (DTW+CNN mean): 0.9012
+Max Total Accuracy So Far: 0.9012
+Is Best Model?: Yes!
+Reached Human Level?: No
+==================================================
+
+[TEST] Generating test handwriting samples...
+
+==================================================
+[TEST] DTW classification (Step: 378)
+==================================================
+[Prediction] DTW Total Accuracy: 0.9281
+[Test Set Target] DTW Total Accuracy: 0.9970
+[DTW Gap] (Test - Pred): 0.0689
+
+==================================================
+[TEST] CNN classification (Step: 378)
+==================================================
+[Prediction] CNN Total Accuracy: 0.9117
+[Test Set Target] CNN Total Accuracy: 0.9980
+[CNN Gap] (Test - Pred): 0.0863
+
+==================================================
+[TEST] Final Performance Summary (Step: 378)
+==================================================
+Current Total Accuracy (DTW+CNN mean): 0.9199
+Max Total Accuracy So Far: 0.9199
+Is Best Model?: Yes!
+Reached Human Level?: No
+==================================================
+
+[TEST] Generating test handwriting samples...
+
+==================================================
+[TEST] DTW classification (Step: 441)
+==================================================
+[Prediction] DTW Total Accuracy: 0.8953
+[Test Set Target] DTW Total Accuracy: 0.9970
+[DTW Gap] (Test - Pred): 0.1017
+
+==================================================
+[TEST] CNN classification (Step: 441)
+==================================================
+[Prediction] CNN Total Accuracy: 0.9109
+[Test Set Target] CNN Total Accuracy: 0.9980
+[CNN Gap] (Test - Pred): 0.0871
+
+==================================================
+[TEST] Final Performance Summary (Step: 441)
+==================================================
+Current Total Accuracy (DTW+CNN mean): 0.9031
+Max Total Accuracy So Far: 0.9199
+Is Best Model?: No
+Reached Human Level?: No
+==================================================
+
+[TEST] Generating test handwriting samples...
+
+==================================================
+[TEST] DTW classification (Step: 504)
+==================================================
+[Prediction] DTW Total Accuracy: 0.9273
+[Test Set Target] DTW Total Accuracy: 0.9970
+[DTW Gap] (Test - Pred): 0.0697
+
+==================================================
+[TEST] CNN classification (Step: 504)
+==================================================
+[Prediction] CNN Total Accuracy: 0.9289
+[Test Set Target] CNN Total Accuracy: 0.9980
+[CNN Gap] (Test - Pred): 0.0691
+
+==================================================
+[TEST] Final Performance Summary (Step: 504)
+==================================================
+Current Total Accuracy (DTW+CNN mean): 0.9281
+Max Total Accuracy So Far: 0.9281
+Is Best Model?: Yes!
+Reached Human Level?: No
+==================================================
+
+[TEST] Generating test handwriting samples...
+
+==================================================
+[TEST] DTW classification (Step: 567)
+==================================================
+[Prediction] DTW Total Accuracy: 0.8898
+[Test Set Target] DTW Total Accuracy: 0.9970
+[DTW Gap] (Test - Pred): 0.1072
+
+==================================================
+[TEST] CNN classification (Step: 567)
+==================================================
+[Prediction] CNN Total Accuracy: 0.8938
+[Test Set Target] CNN Total Accuracy: 0.9980
+[CNN Gap] (Test - Pred): 0.1042
+
+==================================================
+[TEST] Final Performance Summary (Step: 567)
+==================================================
+Current Total Accuracy (DTW+CNN mean): 0.8918
+Max Total Accuracy So Far: 0.9281
+Is Best Model?: No
+Reached Human Level?: No
+==================================================
+
+[TEST] Generating test handwriting samples...
+
+==================================================
+[TEST] DTW classification (Step: 630)
+==================================================
+[Prediction] DTW Total Accuracy: 0.9242
+[Test Set Target] DTW Total Accuracy: 0.9970
+[DTW Gap] (Test - Pred): 0.0728
+
+==================================================
+[TEST] CNN classification (Step: 630)
+==================================================
+[Prediction] CNN Total Accuracy: 0.9453
+[Test Set Target] CNN Total Accuracy: 0.9980
+[CNN Gap] (Test - Pred): 0.0527
+
+==================================================
+[TEST] Final Performance Summary (Step: 630)
+==================================================
+Current Total Accuracy (DTW+CNN mean): 0.9348
+Max Total Accuracy So Far: 0.9348
+Is Best Model?: Yes!
+Reached Human Level?: No
+==================================================
+
+[TEST] Generating test handwriting samples...
+
+==================================================
+[TEST] DTW classification (Step: 693)
+==================================================
+[Prediction] DTW Total Accuracy: 0.9234
+[Test Set Target] DTW Total Accuracy: 0.9970
+[DTW Gap] (Test - Pred): 0.0736
+
+==================================================
+[TEST] CNN classification (Step: 693)
+==================================================
+[Prediction] CNN Total Accuracy: 0.9422
+[Test Set Target] CNN Total Accuracy: 0.9980
+[CNN Gap] (Test - Pred): 0.0558
+
+==================================================
+[TEST] Final Performance Summary (Step: 693)
+==================================================
+Current Total Accuracy (DTW+CNN mean): 0.9328
+Max Total Accuracy So Far: 0.9348
+Is Best Model?: No
+Reached Human Level?: No
+==================================================
+
+[TEST] Generating test handwriting samples...
+
+==================================================
+[TEST] DTW classification (Step: 756)
+==================================================
+[Prediction] DTW Total Accuracy: 0.9289
+[Test Set Target] DTW Total Accuracy: 0.9970
+[DTW Gap] (Test - Pred): 0.0681
+
+==================================================
+[TEST] CNN classification (Step: 756)
+==================================================
+[Prediction] CNN Total Accuracy: 0.9586
+[Test Set Target] CNN Total Accuracy: 0.9980
+[CNN Gap] (Test - Pred): 0.0394
+
+==================================================
+[TEST] Final Performance Summary (Step: 756)
+==================================================
+Current Total Accuracy (DTW+CNN mean): 0.9438
+Max Total Accuracy So Far: 0.9438
+Is Best Model?: Yes!
+Reached Human Level?: No
+==================================================
+
+[TEST] Generating test handwriting samples...
+
+==================================================
+[TEST] DTW classification (Step: 819)
+==================================================
+[Prediction] DTW Total Accuracy: 0.9305
+[Test Set Target] DTW Total Accuracy: 0.9970
+[DTW Gap] (Test - Pred): 0.0665
+
+==================================================
+[TEST] CNN classification (Step: 819)
+==================================================
+[Prediction] CNN Total Accuracy: 0.9289
+[Test Set Target] CNN Total Accuracy: 0.9980
+[CNN Gap] (Test - Pred): 0.0691
+
+==================================================
+[TEST] Final Performance Summary (Step: 819)
+==================================================
+Current Total Accuracy (DTW+CNN mean): 0.9297
+Max Total Accuracy So Far: 0.9438
+Is Best Model?: No
+Reached Human Level?: No
+==================================================
+
+[TEST] Generating test handwriting samples...
+
+==================================================
+[TEST] DTW classification (Step: 882)
+==================================================
+[Prediction] DTW Total Accuracy: 0.9508
+[Test Set Target] DTW Total Accuracy: 0.9970
+[DTW Gap] (Test - Pred): 0.0462
+
+==================================================
+[TEST] CNN classification (Step: 882)
+==================================================
+[Prediction] CNN Total Accuracy: 0.9555
+[Test Set Target] CNN Total Accuracy: 0.9980
+[CNN Gap] (Test - Pred): 0.0425
+
+==================================================
+[TEST] Final Performance Summary (Step: 882)
+==================================================
+Current Total Accuracy (DTW+CNN mean): 0.9531
+Max Total Accuracy So Far: 0.9531
+Is Best Model?: Yes!
+Reached Human Level?: No
+==================================================
+
+[TEST] Generating test handwriting samples...
+
+==================================================
+[TEST] DTW classification (Step: 945)
+==================================================
+[Prediction] DTW Total Accuracy: 0.9453
+[Test Set Target] DTW Total Accuracy: 0.9970
+[DTW Gap] (Test - Pred): 0.0517
+
+==================================================
+[TEST] CNN classification (Step: 945)
+==================================================
+[Prediction] CNN Total Accuracy: 0.9469
+[Test Set Target] CNN Total Accuracy: 0.9980
+[CNN Gap] (Test - Pred): 0.0511
+
+==================================================
+[TEST] Final Performance Summary (Step: 945)
+==================================================
+Current Total Accuracy (DTW+CNN mean): 0.9461
+Max Total Accuracy So Far: 0.9531
+Is Best Model?: No
+Reached Human Level?: No
+==================================================
+
+[TEST] Generating test handwriting samples...
+
+==================================================
+[TEST] DTW classification (Step: 1008)
+==================================================
+[Prediction] DTW Total Accuracy: 0.9375
+[Test Set Target] DTW Total Accuracy: 0.9970
+[DTW Gap] (Test - Pred): 0.0595
+
+==================================================
+[TEST] CNN classification (Step: 1008)
+==================================================
+[Prediction] CNN Total Accuracy: 0.9617
+[Test Set Target] CNN Total Accuracy: 0.9980
+[CNN Gap] (Test - Pred): 0.0363
+
+==================================================
+[TEST] Final Performance Summary (Step: 1008)
+==================================================
+Current Total Accuracy (DTW+CNN mean): 0.9496
+Max Total Accuracy So Far: 0.9531
+Is Best Model?: No
+Reached Human Level?: No
+==================================================
+

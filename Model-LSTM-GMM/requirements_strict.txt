@@ -1,0 +1,14 @@
+tensorflow==2.8.0
+tensorflow-addons==0.16.1
+tensorflow-probability==0.16.0
+pandas==1.5.3
+numpy==1.23.5
+scikit-learn==1.2.2
+Pillow==9.4.0
+PyYAML==6.0.1
+opencv-python==4.8.0
+Wand==0.6.11
+scipy==1.11.2
+tqdm==4.66.1
+matplotlib==3.7.1
+tslearn==0.6.2

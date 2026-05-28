@@ -1,0 +1,15 @@
+tensorflow[and-cuda]==2.14.0
+tensorflow-addons==0.22.0
+tensorflow-probability==0.22.1
+pandas
+numpy
+scikit-learn
+Pillow
+PyYAML
+opencv-python
+Wand
+scipy
+tqdm
+matplotlib
+tslearn
+wandb

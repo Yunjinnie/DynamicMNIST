@@ -1,0 +1,4 @@
+[submodule "KerasMNIST"]
+	path = KerasMNIST
+	url = https://github.com/lab-taco/KerasMNIST.git
+	branch = main

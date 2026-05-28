@@ -1,0 +1,15 @@
+tensorflow==2.8.0
+tensorflow-addons==0.16.1
+tensorflow-probability==0.16.0
+pandas
+numpy
+scikit-learn
+Pillow
+PyYAML
+opencv-python
+Wand
+scipy
+tqdm
+matplotlib
+tslearn
+wandb

@@ -1,0 +1,92 @@
+# Data parameters ##############################################################
+path_velocity_dataset : '../Data/data_split/data_split_kine_digit_1000.csv' # original data
+#path_velocity_dataset : '/home/sungjae/Projects/DynamicMNIST-Data/data_split/data_split_kine_digit_1000.csv'
+#path_velocity_dataset : '/home/sungjae/Projects/DynamicMNIST-Data/data_split/data_split_62characters_100.csv'
+path_velocity_dataset_digit : '/home/yunjinna/DynamicMNIST/Data/data_split/data_split_62characters_100_digit.csv' #'/home/yunjinna/DynamicMNIST/Data/data_split/data_split_kine_digit_1000_split_main.csv' 
+path_velocity_dataset_char : '/home/yunjinna/DynamicMNIST/Data/data_split/data_split_62characters_100_char.csv' #'/home/yunjinna/DynamicMNIST/Data/data_split/data_split_kine_digit_1000_split_corr.csv' #
+path_home_dataset : '../Data'
+#path_home_dataset : '/home/sungjae/Projects/DynamicMNIST-Data'
+character_set : '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+#character_set : '0123456789'
+#character_set : '0123456789abcdefghijklmnopqrstuvwxyz'
+#character_set : '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+n_motor_programs : # Specify the number of motor programs, which is not 1.
+ - '9' : 2
+v_dx_dim : 1
+v_dy_dim : 1
+v_direction_dim : 24 # deprecated
+v_speed_dim : 24 # deprecated
+v_char_dim : 62 # kine 4 + one-hot 62 = 66?
+v_hover_dim : 1
+v_eod_dim : 1
+mask_value : -1
+dxdy_normalization : False # default: True
+std_scale : True
+scale : 1
+train_used_ratio : 1.0 # default: 1.0 (Use all training data.)
+val_used_ratio : 1.0 # default: 1.0 (Use all validation data.)
+test_used_ratio : 1.0 # default: 1.0 (Use all test data.)
+# Model Hparams ################################################################
+target : 'v' # 'v': velocity, 'a':acceleration.
+input_kine :
+# - 'p' # position
+ - 'v' # velocity
+# - 'a' # acceleration
+train_mode:
+  stage: 1          # 1: Main Model 단독, 2: Corrector 사전학습, 3: Fine-tuning
+  dataset: 'digit' #'char'  # 'digit' 또는 'alphabet'/'char'
+lstm_dim : 1024 # default: 1024
+lstm_dropout : 0.0
+lstm_r_dropout : 0.0
+smooth_dxdy_ratio : 1.0 # default: 1.0 (No smoothing. Current ratio == 1.0)
+use_trainable_smooth_ratio : False # default: False (Using smooth_dxdy_ratio)
+use_static_trainable_smooth_ratio : False # False: Variable smooth ratio through time
+smooth_net_dim : 128
+n_g_mixtures : 17 # 20 in the Graves' paper
+2d_gaussian_dim : 6 # Fixed. 6 vars: pi, mean1, mean2, std1, std2, correlation
+use_lstm : True # default: True
+use_layernorm : True # default: True
+use_corrector : True # False # True
+use_rnn_corrector : False
+use_corrector_output_gmm : False
+use_corrector_input_gmm_params : True
+correction_input : False
+correction_output : True
+# Training Hparams #############################################################
+train_ratio : 0.8
+n_epochs : 50 # 50 # 30 # 200
+batch_size : 128 # 256
+batch_size_eval : 32
+batch_size_test : 128
+test_tf_sampling : True
+l2_reg_coef : 0.0000 # 0.25, 0.1, 0.01, 0.0001
+max_grad_norm : 1.0
+learning_rate : 0.001 # 1e-3
+epsilon : 0.00001 # 1e-5
+seed : 29585114 # 42
+degree_random_rotation : 15 # absolute degree
+p_mask_input_dxdy_train : 0.00 # probability to mask feedback (dx, dy)
+p_mask_input_dxdy_test : 0.00 # probability to mask feedback (dx, dy)
+p_spatial_error : 0.0 # probability to gain taret (dx,dy) from spatially observed errors
+delayed_steps : 20 # default: 0 step (dt delay; e.g., 20ms). "Added time for delay." Average proprioceptive delay: 50ms-60ms. Average visual delay: 100ms-120ms. [Cameron et al., 2014].
+delayed_steps_ctrl : 0 # for controller's training
+delayed_steps_ctrl_test : 0 # for controller's testing
+# Synthesis parameters #########################################################
+w_img : 256
+h_img : 256
+stroke_width : 10
+dt : 20 # ms
+train_synth_period : 1 # epochs
+val_period_epoch : 1 # epochs
+val_period_itr : -1 # iterations
+test_period_epoch : 1 # epochs
+test_period_itr : -1 # iterations
+stop_itr : -1 # Stop program at a certain iteration
+period_to_save_model : -1 # epochs. -1 for stopping periodic saving.
+save_only_best_model : True
+max_steps : 100 # maximum recurrent steps at self-feedback generation
+# Logging params ###############################################################
+dir_log : 'logs'
+
+# API KEY
+# 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
